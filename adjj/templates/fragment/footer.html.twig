@@ -1,27 +1,21 @@
 <footer class="bg-light mt-5">
-  <div class="row">
-    <div class="col mx-2">
-      <h5>Contact</h5>
+  <div class="row row-cols-lg-4 justify-content-between offset-1">
+    <div class="col">
+      <h5 id="contact">Contact</h5>
       <p>Téléphone : 06.83.98.15.85</p>
       <p>Email : clubadjj89@gmail.com</p>
     </div>
-    <div class="col list-unstyled">
-      <h5><a href="" class="text-decoration-none">Nos écoles</a></h5>
-      <ul class="text-capitalize list-unstyled">
-        <li>Saint-julien-du-sault</li>
-        <li>Appoigny</li>
-        <li>Saint-georges-sur-baulches</li>
-        <li>Aillant-sur-tholon</li>
-      </ul>
-    </div>
+    
     <div class="col">
       <h5>Informations</h5>
       <ul class="list-unstyled">
-        <li><a href="" class="text-decoration-none">Plannings</a></li>
-        <li><a href="" class="text-decoration-none">Code d'honneur</a></li>
-        <li><a href="" class="text-decoration-none ">Origines du Ju-Jutsu</a></li>
+        <li><a href="{{path("planning")}}" class="text-decoration-none">Plannings</a></li>
+        <li><a href="{{path("ecoles")}}" class="text-decoration-none">Nos écoles</a></li>
+        <li><a href="{{path("code")}}" class="text-decoration-none">Code d'honneur</a></li>
+        <li><a href="{{path("origines")}}" class="text-decoration-none ">Origines du Ju-Jutsu</a></li>
       </ul>
     </div>
+
     <div class="col">
       <h5>Nos réseaux sociaux</h5>
       <ul class="list-unstyled">
