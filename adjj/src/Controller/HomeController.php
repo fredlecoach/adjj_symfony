@@ -35,7 +35,8 @@ class HomeController extends AbstractController{
   }
   #[Route("/stages_competitions", name: "stages_competitions")]//1ère valeur => barre de navigation, 2ème valeur => lien du menu
   public function stages_competitions(){
-  return $this->render("front/stages_competitions.html.twig");
+    $data["h1"]= "Stages et compétitions";
+  return $this->render("front/stages_competitions.html.twig", $data);
   }
 
 

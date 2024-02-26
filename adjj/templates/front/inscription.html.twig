@@ -1,80 +1,12 @@
 {% extends "bootstrap.html.twig" %}
 
+{% block title %}Inscriptions{% endblock %}
+
   {% block body %}
     <h1 class="display-5 text-center mb-3">Inscriptions</h1>
+    <p class="text-danger fw-bold col-8 mx-auto text-center">Le nombre de places disponibles étant limité, vous pouvez vous pré-inscrire afin de réserver votre place.
+    <br>Toute pré-inscription est valide pour une durée de 15 jours. Passé ce délai, la place est à nouveau disponible.*</p>
     {{ form_start(form) }}
         {{ form_widget(form) }}
     {{ form_end(form) }}
 {% endblock %}
-  
-
-{# <div class="container py-3">
-  <h1 class="display-3 text-center mb-3">Inscriptions</h1>
-  <div class="row">
-
-    <form method="post">
-
-<!-- champs nom -->      
-      <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput"  name="nom"  required>
-      <label for="floatingInput">nom</label>
-      </div>
-<!-- champs prenom -->
-      <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" 
-      name="prenom"
-      required>
-      <label for="floatingInput">Prénom</label>
-      </div>
-<!-- champs adresse -->
-      <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" 
-      name="adresse"
-      required>
-      <label for="floatingInput">Adresse</label>
-      </div>
-<!-- champs telephone -->
-      <div class="form-floating mb-3">
-      <input type="number" class="form-control" id="floatingInput" name="tel"   required>
-      <label for="floatingInput">Téléphone</label>
-      </div>
-<!-- champs email -->
-      <div class="form-floating mb-3">
-      <input type="email" class="form-control"
-      name="email" 
-      id="floatingInput"  required>
-      <label for="floatingInput">Email</label>
-      </div>
-  </div>
-<!-- champs disciplines -->
-    <div class="row">
-        <div class="col-md">
-          <div class="form-floating">
-            <select class="form-select" id="floatingSelectGrid">
-              <option name="disciplines" selected>Sélection</option>
-              <option value="jjb">Jiu-jitsu brésilien</option>
-              <option value="selfdefense">Self-défense</option>
-              <option value="jujutsu">Atemi ju-jutsu</option>
-              <option value="mushinryu">Mushin-ryu</option>
-              <option value="zenhakkokai">Zen hakko-kaï</option>
-              <option value="valetudo">Vale tudo</option>
-            </select>
-            <label for="floatingSelectGrid">Choix des disciplines</label>
-          </div>
-          <div class="border rounded my-2 px-2 py-2">
-          <label for="reglement">Règlement par RIB =></label>
-          <input type="file" name="rib" id="rib" value="rib">
-          </div>
-         
-        </div>
-          <textarea name="commentaires" id="" cols="30" rows="10"  class="my-3" placeholder="Demandes supplémentaires"></textarea>
-        </div>
-        <div class="d-flex justify-content-end">
-        <input type="submit" value="Envoyer" name="envoyer" class="w-25">
-        </div>
-        
-      </form>
-    </div>
-</div>
-
-{% endblock %} #}
